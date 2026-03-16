@@ -25,6 +25,8 @@ Advanced features to automatically start your tasks via Silently when a keyword 
 | `/autostart_min_stock "amount"` | Only starts tasks if stock is above this amount. Example: If set to `15`, any match with stock < 15 won't trigger tasks. |
 | `/autostart_schedule "start_time" "end_time"` | Activates tasks only within a timeframe. Format: `XX.XX` (e.g., `14.00` to `23.00`). Timezone: **CEST**. |
 | `/autostart_schedule_reset` | Resets the schedule — tasks run 24/7 as long as `/silently_activate` is on. |
-| `/autostart_disable_keyword` | Disables a selected keyword for autostart. By default every keyword is active when the feature is on. |
+| `/autostart_disable_keyword` | Disables a selected keyword for the autostart feature. |
 | `/autostart_enable_keyword` | Re-enables a previously disabled keyword. |
 | `/autostart_disabled_keywords` | Shows all currently disabled keywords. |
+
+> **Default behavior:** When autostart is activated, it is active for **every** keyword — unless you have specifically added a keyword to the disabled list. This lets you stay in full control of which keywords trigger tasks automatically.
